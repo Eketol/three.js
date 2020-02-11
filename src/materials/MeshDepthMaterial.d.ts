@@ -9,6 +9,8 @@ export interface MeshDepthMaterialParameters extends MaterialParameters {
 	displacementMap?: Texture | null;
 	displacementScale?: number;
 	displacementBias?: number;
+	fog?: boolean;
+	skinning?: boolean;
 	wireframe?: boolean;
 	wireframeLinewidth?: number;
 }
@@ -23,6 +25,8 @@ export class MeshDepthMaterial extends Material {
 	displacementMap: Texture | null;
 	displacementScale: number;
 	displacementBias: number;
+	fog: boolean;
+	skinning: boolean;
 	wireframe: boolean;
 	wireframeLinewidth: number;
 
